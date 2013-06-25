@@ -1,0 +1,29 @@
+	{% extends "base.html" %}
+	{% block content %}
+ 
+
+<!-- SiteSearch Google -->
+<form method="get" action="http://www.google.com/custom" target="_top">
+<table border="0" bgcolor="#ffffff">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32"></td>
+<td nowrap="nowrap">
+<input type="hidden" name="domains" value="127.0.0.1:5000"></input>
+<label for="sbi">Enter your search terms</label>
+<input type="text" name="q" size="31" maxlength="255" value="" id="sbi"></input>
+<input type="submit" name="sa" value="Search" id="sbb"></input>
+</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<td>
+<input type="hidden" name="sitesearch" value="127.0.0.1:5000" id="ss1"></input>
+</tr>
+</table>
+
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+	{% endblock %}

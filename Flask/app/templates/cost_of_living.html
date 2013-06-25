@@ -1,0 +1,131 @@
+	{% extends "base.html" %}
+	{% block content %}
+
+<svg height="30px"></svg>
+<!--<div id="av_wgt_div" class="av_wgt_container" >-->
+	<!--<div class="hd">
+		<a id="av_wgt_lnk" target="_blank" href="//www.areavibes.com/san+francisco-ca/../city-comparison/">San Francisco, CA City Comparison Tool</a>
+	</div>-->
+	
+	<!--<div class="mn">
+		<dl>
+			<dt>See More Reports <em>&#x25BC;</em></dt>
+		
+			<dd><ul id="av_wgt_menu"></ul></dd>
+		</dl>
+		
+		<form target="_blank" method="post" action="//www.areavibes.com/search_alt/">
+		
+		<div>
+			<span class="title">What's the vibe in your city?</span>
+			<button type="submit">go</button>
+			<input type="text" name="query" id="av_wgt_query">
+			<input type="hidden" name="place" id="av_wgt_place">
+		</div>
+		</form>
+	</div>-->
+<!--<svg width="959px" height="593px">	-->
+	<div class="bd">
+		
+		<iframe width="100%" height="370px" frameborder="0" scrolling="no" src="" id="av_wgt_frame" style="border: 2px solid #0000b8">
+		<!--	<html>
+				<head>
+					<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+					<meta name="description" content="">
+					<meta name="keywords" content="">
+					<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+					<title></title>
+					
+		            <link rel="stylesheet" type="text/css" href="/assets/wts.css">
+					<script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/13/4/%7Bcommon,util,geocoder%7D.js" style=""></script>
+					<script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/13/4/%7Bstats%7D.js"></script>
+				</head>
+
+				<body id="wts_city_cmp">
+					<form class="city_cmp" method="post" action="/wts-city-cmp/">
+						<fieldset><legend></legend>
+		
+							<input type="text" autocomplete="off" placeholder="Enter a City" name="qry1" id="qry1"><span class="vs">vs</span>
+							<input type="text" autocomplete="off" placeholder="Enter a City" name="qry2" id="qry2">
+							<button type="submit">Compare</button>
+						
+						</fieldset>
+
+						<fieldset><legend></legend>
+							<ul id="lst1"></ul>
+							<ul id="lst2"></ul>
+						</fieldset>
+					</form>
+
+					<div class="results" id="cmp_city">
+						<table class="std cmp_values">
+							<tbody><tr class="hd"><th>Category</th><th>San Francisco, CA</th>
+								<th></th>
+								<th></th></tr>
+								<tr class="bg ilv">
+									<td>Livability Score</td>
+									<td>76<sub>/100</sub></td><td></td><td><em></em></td>	</tr>
+								<tr class="iam">
+									<td>Amenities</td>
+										<td>9.7<sub>/10</sub></td><td></td><td><em></em></td>		</tr>
+								<tr class="icl">
+									<td>Cost of Living</td>
+										<td>4.5<sub>/10</sub></td><td></td><td><em></em></td>		</tr>
+								<tr class="icr">
+									<td>Crime</td>
+										<td>5.5<sub>/10</sub></td><td></td><td><em></em></td>		</tr>
+								<tr class="ied">
+									<td>Education</td>
+										<td>6.5<sub>/10</sub></td><td></td><td><em></em></td>		</tr>
+								<tr class="iem">
+									<td>Emp­loyment</td>
+										<td>7.7<sub>/10</sub></td><td></td><td><em></em></td>		</tr>
+								<tr class="ihs">
+									<td>Housing</td>
+										<td>9.5<sub>/10</sub></td><td></td><td><em></em></td>		</tr>
+								<tr class="iwt">
+									<td>Weather</td>
+										<td>7<sub>/10</sub></td><td></td><td><em></em></td>		</tr>
+							</tbody></table>
+						</div>
+
+						<cite>
+							<a class="widget" target="_blank" href="/widgets/builder/">Put this widget on your website</a>
+							<a class="home" target="_blank" href="/">powered by</a>
+						</cite>
+
+						<noscript>&lt;div id="noscript"&gt;You need javascript enabled to fully utilise this site. You can try using it without if you wish.&lt;/div&gt;</noscript>
+						<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;sensor=false"></script>
+						<script src="https://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/13/4/%7Bmain,places%7D.js" type="text/javascript"></script>
+						<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+						<script type="text/javascript" src="/assets/global.js"></script><script type="text/javascript">
+							
+							var val_city1='san francisco, ca', val_city2='';
+						
+						</script>
+				</body>
+			</html>-->
+		</iframe>
+	
+	</div>
+	
+<p>For every category, the higher the score the better the situation (eg. 10/10 means almost no crime).</p>
+<!--</svg>-->
+	
+<!--</div>  -->
+
+<script type="text/javascript" src="//www.areavibes.com/assets/wgt.js"></script>
+
+<script type="text/javascript">
+
+window.onload = function(){
+	create_widget()();
+};
+
+var av_wgt_opts = {"place":"San Francisco, CA","state":"ca","city":"san+francisco","theme":"red","width":"630px","selected_item":"0",
+					"items":[{"pnl_class":"cc","lbl":"City Comparison Tool","lnk":"/../city-comparison/","uri":"wts-city-cmp/"}]};
+
+</script>
+
+	{% endblock %}

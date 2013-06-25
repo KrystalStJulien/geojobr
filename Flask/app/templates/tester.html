@@ -1,0 +1,41 @@
+	{% extends "base.html" %}
+	{% block content %}
+	
+	<h1>This is a test page!</h1>
+	<!--
+	<script type=text/javascript>
+  $(function() {
+    $('#button').click(function() {
+      $.getJSON($SCRIPT_ROOT + '/tester', {
+        a: $('#a').val(),
+        b: $('#b').val()
+      }, function(data) {
+        $("#result").text(data.result);
+      });
+      return false;
+    });
+  });
+</script>
+<p><input type="text" size=5 name="a" id="a"> +
+   <input type="text" size=5 name="b" id="b"> = {{value}}
+   <span id=result>?</span>
+<input type="submit" id="button" value="calculate server side">
+--><script type=text/javascript>
+  $(function() {
+    $('a#calculate').bind('click', function() {
+      $.getJSON($SCRIPT_ROOT + '/tester', {
+        a: $('input[name="a"]').val(),
+        b: $('input[name="b"]').val()
+      }, function(data) {
+        $("#result").text(data.result);
+      });
+      return false;
+    });
+  });
+</script>
+<h1>jQuery Example</h1>
+<p><input type=text size=5 name=a> +
+   <input type=text size=5 name=b> = {{value}}
+   <span id=result>?</span>
+<p><a href=# id=calculate>calculate server side</a>
+	{% endblock %}

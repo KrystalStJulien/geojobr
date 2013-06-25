@@ -1,0 +1,44 @@
+	{% extends "base.html" %}
+	{% block content %}
+
+<p id="heading">Finding a job in today's economy</p>
+
+<img src="/static/img/ajax-loader.gif" id="loading_image" style="border: 1px solid #0000b8; position: relative; top: -20px; z-index: 1; display: none;"> <!--style="display: none;" --> 
+<p id="wait_message" style="font-size: 10px; display: none;">may take 10-15 seconds...</p>
+
+<form method="post"> <!-- action="map" -->
+<input id="search" name="search" type="text" size="20" maxlength="30" placeholder="Job Title" style="position: relative; z-index: 2;">
+<svg width="100px" height="10px"></svg>
+<input type="submit" onclick="form.action='map'" class="button" id="button1" value="Where am I in demand?" style="position: relative; z-index: 2;" title="Click to find state where jobs are most difficult to fill.">
+<!--<svg width="100px" height="30px"></svg>
+<input type="submit" onclick="form.action='abs_map'" class="button" id="button2" value="Where are the most jobs?" style="position: relative; z-index: 2;" title="Click to find state with the most jobs available.">
+-->
+</form>
+
+
+
+<script>
+	$('.button').click(function() {
+    	$('#loading_image').show();
+    	$('#wait_message').show(); // show animation
+    	return true; // allow regular form submission
+	});
+	
+	$(document).ready(function() {
+  		$(window).keydown(function(event){
+    		if(event.keyCode == 13) {
+      			event.preventDefault();
+      			return false;
+    		}
+  		});
+	});
+	
+$(".button").tooltipsy();
+</script>
+<!--<h1>{{job_values}}</h1>-->
+
+<svg height="290px"></svg>
+  	<p>Developed by Krystal St. Julien, © Insight Data Science 2013</p>
+
+  
+	{% endblock %}

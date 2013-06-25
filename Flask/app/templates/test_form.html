@@ -1,0 +1,32 @@
+	{% extends "base.html" %}
+	{% block content %}
+<!--	
+<script>
+
+//$( document ).ready(function() {
+	//$( '#button' ).click(function() {
+		//var job = $("#search").val();
+		//alert(job);
+		//$.ajax({
+			//url: "grab.py",
+			//method: "POST",
+			//data: {textfield: job},
+			//success: function(responseData) {
+			//	alert("Job successfully sent!");
+    		//},
+    		//error: function(jxhr, statusText, err) {
+			//	alert("Why you no work?");
+    		//}
+		//})
+		
+	//});
+//});
+
+</script> -->
+
+<form action="" method="post">
+<input id="search" name="search" type="text" size="20" maxlength="30" placeholder="Job Title">
+<input type="submit" id="button" value="Where am I in demand?">
+</form>
+<h1>{{value}}</h1>
+	{% endblock %}

@@ -10,8 +10,8 @@ function goBack() {
 };
 </script>
 		<svg width="959" height="593" style="background-color: white; border: 1px solid black;">
-<text x="470" y="30" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="20" fill="#00008b">Total Jobs Found in US for '{{query}}': {{total}}</text>
-<text x="420" y="170" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="15" fill="#00008b">All jobs are in city or within 25 miles of city</text>
+<text x="430" y="30" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="20" fill="#00008b">Total Jobs Found in US for '{{query}}': {{total}}</text>
+<!--<text x="420" y="170" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="15" fill="#00008b">All jobs are in city or within 25 miles of city</text>-->
 <text x="400" y="150" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="20" fill="#00008b" style="text-decoration: underline">  Top cities for '{{query}}' jobs in {{state}}  </text>
 
 			<style type="text/css">
@@ -81,11 +81,14 @@ function goBack() {
 <path d="m 144.69443,382.19813 3.94008,-0.48862 1.48604,-2.01144 0.54454,-2.94109 -3.55152,-0.59012 -0.51417,-0.66822 0.4775,-2.03231 -0.15928,-0.58967 1.92257,-0.61959 3.04278,-2.83268 0.58156,-4.9951 1.3799,-3.40211 1.94329,-2.16626 3.51887,-1.58967 1.65439,-1.60483 0.0687,-2.10884 -0.99333,-0.58001 -1.02315,-1.07273 -1.15522,-5.84845 -2.6852,-4.83009 0.56581,-3.505 -2.41958,-1.02931 -69.061322,-104.1784 18.902112,-67.60149 -67.079863,-15.69796 -1.506896,4.73324 -0.161661,7.43638 -5.173135,11.80121 -3.071548,2.58657 -0.323321,1.13162 -1.778266,0.80831 -1.454944,4.20317 -0.808302,3.23321 2.748228,4.20317 1.616605,4.20317 1.131623,3.55653 -0.323321,6.46642 -1.778265,3.07155 -0.646642,5.81978 -0.969963,3.71819 1.778265,3.87985 2.748228,4.52649 2.263247,4.84982 1.293283,4.04151 -0.32332,3.23321 -0.323321,0.48498 0,2.10158 5.658116,6.30476 -0.484981,2.42491 -0.646642,2.26325 -0.646642,1.93992 0.16166,8.24469 2.101586,3.71819 1.939926,2.58656 2.748228,0.48499 0.969963,2.74822 -1.131623,3.55653 -2.101587,1.61661 -1.131623,0 -0.808302,3.87985 0.484981,2.90989 3.23321,4.36483 1.616604,5.3348 1.454944,4.68815 1.293284,3.07155 3.39487,5.81978 1.454944,2.58656 0.484982,2.90989 1.616604,0.96996 0,2.42491 -0.808302,1.93993 -1.778265,7.11306 -0.484982,1.93992 2.424908,2.74823 4.203172,0.48498 4.526493,1.77827 3.879851,2.10158 2.909889,0 2.909888,3.07155 2.586567,4.84982 1.131624,2.26324 3.879851,2.10159 4.849814,0.8083 1.454944,2.10159 0.646642,3.23321 -1.454944,0.64664 0.323321,0.96996 3.233211,0.8083 2.748228,0.16167 3.159889,-1.68685 3.879854,4.20317 0.808302,2.26325 2.586572,4.20317 0.32332,3.23321 0,9.37631 0.48498,1.77826 10.02295,1.45495 19.72257,2.74822 13.84504,1.3497 z m -88.135212,-43.71668 1.293288,1.53578 -0.16166,1.29329 -3.233221,-0.0808 -0.565814,-1.21246 -0.646644,-1.45495 3.314051,-0.0808 z m 1.939932,0 1.212458,-0.64664 3.556543,2.10159 3.07156,1.21245 -0.889136,0.64666 -4.526509,-0.2425 -1.61661,-1.61661 -0.808306,-1.45495 z m 20.692614,19.80348 1.778265,2.34408 0.808313,0.96997 1.535779,0.56581 0.565807,-1.45495 -0.969963,-1.77827 -2.667403,-2.02076 -1.050798,0.16166 0,1.21246 z m -1.454955,8.64886 1.778276,3.15239 1.212458,1.93994 -1.454954,0.24248 -1.293284,-1.21245 c 0,0 -0.727477,-1.45495 -0.727477,-1.85911 0,-0.40414 0,-2.18242 0,-2.18242 l 0.484981,-0.0808 z" id="CA" class="state" title="{{CA}}"/>
 </svg>	
 
-<input type="button" value="Go back to previous map" style="cursor: hand; position: absolute; top: 560; left: 630; z-index: 2; color: #00008b;" onclick="goBack()">
+<input type="button" value="Go back to previous map" style="font-size: 20; cursor: hand; position: absolute; top: 560; left: 650; z-index: 2; color: #00008b;" onclick="goBack()">
+<input type="button" value="Search all jobs in {{state}}" style="font-size: 20; cursor: hand; position: absolute; top: 560; left: 840; z-index: 2; color: #00008b;" onclick="goToIndeedState()">
+
 <!--
 <div id="droplist" style="position:absolute; top:300; left:800; color:red; font-size:20px; z-index:2;">	
 -->
 <script>
+/*
 var cities_15 = {
 'AL': ['Birmingham', 'Montgomery', 'Mobile', 'Huntsville', 'Tuscaloosa', 'Hoover', 'Dothan', 'Decatur',
         'Auburn', 'Madison', 'Florence', 'Gadsden', 'Vestavia Hills', 'Prattville', 'Phenix City'],
@@ -188,16 +191,30 @@ var cities_15 = {
 'WY': ['Cheyenne', 'Casper', 'Laramie', 'Gillette', 'Rock Springs', 'Sheridan', 'Green River', 'Evanston', 'Riverton',
             'Jackson', 'Cody', 'Rawlins', 'Lander', 'Torrington', 'Powell']
 };
+*/
 
-var jobnumbers = {{jobnum_list}};
+var jobnumbers = [{{jobnum_list[-1]}}, {{jobnum_list[-2]}}, {{jobnum_list[-3]}}, {{jobnum_list[-4]}}, {{jobnum_list[-5]}}];
+
+var cities = ['{{list_of_cities[-1]}}', '{{list_of_cities[-2]}}', '{{list_of_cities[-3]}}', '{{list_of_cities[-4]}}', '{{list_of_cities[-5]}}'];
+
+var make_break = document.createElement('br');
+/*
+var min = jobnumbers.filter(function(x){ 
+   				return x !== 0;
+			}).sort(function(a,b){
+  				return a>b;
+  			})[0];
+
+var max = Math.max.apply(null, jobnumbers);
+*/
 
 var state = '{{state}}';
 
 if (state === "MI1" | "MI2"){
-	var cities = cities_15["MI"];
+	//var cities = cities_15["MI"];
 	state = "MI";
 }else{
-	var cities = cities_15[state];
+	//var cities = cities_15[state];
 };
 
 if (state === "DC"){
@@ -214,23 +231,47 @@ if (state === "DC"){
 	
 }else{	
 	
+/*	
 var cities_numbers = {};
-//var job_floats = [];
+var index_cities = {};
+var list_count_jobs = [];
+var count_jobs = 0;
 for (k=0; k<cities.length; k++){
+	//index_cities[k] = cities[k];
+	//list_count_jobs.push({k: jobnumbers[k]});
 	cities_numbers[jobnumbers[k]] = cities[k];	
+//	list_count_jobs[k] = {jobnumbers[k]: cities[k]};
 };
+
+//alert(list_count_jobs[5]);
 
 var num_sort = jobnumbers.sort(function(a,b){return b - a});
+*/
 
 function goToIndeed(city_string) {
-	
-	window.location.href='http://www.indeed.com/jobs?q=title:"{{search_string}}"&l=' + city_string + ',+' + state + '';
+
+	window.location.href='http://www.indeed.com/jobs?q=title:"{{search_string}}"&radius=0&l=' + city_string + ',+' + state + '';
 };
 
+function goToIndeedState() {
+	window.location.href='http://www.indeed.com/jobs?q=title:"{{search_string}}"&radius=0&l=' + state + '';
+};
+
+
+$(document).ready(function(){
+	$('text').click(function(e){
+		   var element = document.elementFromPoint(e.pageX, e.pageY);
+		   goToIndeed(element.id);
+	});		
+});
+
 var string_num = {};
-for (i=0; i<5; i++) {
-				
-		var city_string =  cities_numbers[num_sort[i]];
+var counter = 0;
+for (i=0; i<cities.length; i++) {
+	
+	if (jobnumbers[i] > 0){			
+		//var city_string =  cities_numbers[num_sort[i]];
+		var city_string = cities[i];
 		var split_city_string = city_string.split(" ");
 		
 		if (split_city_string.length === 2){
@@ -249,22 +290,74 @@ for (i=0; i<5; i++) {
 			.attr("y", 220 + i*40)
 			.attr("font-size", "20")
 	  		.attr("fill", "#00008b")
-	  		.attr("onclick", "goToIndeed(use_city)")
+	  		.attr("id", use_city)
+	  		//.attr("onclick", "goToIndeed(getElementId())")
 	  		.style("cursor", "pointer")
 			//.append('a')
 			//.attr("href", "www.google.com")
 			//.text("hello world");
 	  	    //.attr("y," "70" + 10 * n + "")
-	  		.text(city_string + ": " + num_sort[i] + " jobs");
+	  		.text(city_string + ": " + jobnumbers[i] + " jobs");
 	  	//	.attr("font-family", "Century Gothic, Helvetica, Arial, sans-serif")
 
 
+
 	  
+} else {
+	counter++;
+	
 };  
-//}; 
+ if (counter === 5){
+ 			d3.selectAll('svg')
+			.append('text')
+			.attr("x", 350)
+			.attr("y", 240)
+			.attr("font-size", "30")
+	  		.attr("fill", "#00008b")
+	  		//.attr("onclick", "goToIndeed(use_city)")
+	  		//.style("cursor", "pointer")
+			//.append('a')
+			//.attr("href", "www.google.com")
+			//.text("hello world");
+	  	    //.attr("y," "70" + 10 * n + "")
+	  		.text("No jobs found in major cities of " + state);
+	  		
+	  		d3.selectAll('svg')
+	  		.append('text')
+	  		.attr("x", 410)
+	  		.attr("y", 300)
+	  		.attr("font-size", "20")
+	  		.attr("fill", "#00008b")
+	  		.attr("onclick", "goToIndeedState()")
+	  		//.style("cursor", "pointer")
+	  		.text("Click below for jobs across entire state");
+ }else{
+/* 		  d3.selectAll('svg')
+	  		.append('text')
+	  		.attr("x", 420)
+	  		.attr("y", 410)
+	  		.attr("font-size", "20")
+	  		.attr("fill", "#00008b")
+	  		.attr("onclick", "goToIndeedState()")
+	  		.style("cursor", "pointer")
+	  		.text("Click here to search all jobs in " + state); */
+	  		
+	  	d3.selectAll('svg')
+	  	  .append('input')
+	  	  .attr("type", "button")
+	  	  .attr("value", "Click here to search all Jobs in " + state)
+	  	  .attr("onclick", "goToIndeedState()")
+	  	  .style("font-size", "20")
+	  	  .style("cursor", "pointer")
+	  	  .style("position", "absolute")
+	  	  .style("top", "560")
+	  	  .style("left", "630")
+	  	  .style("z-index", "2")
+	  	  .style("color", "#00008b");
+ }; 
 };
 
-
+};
 function getCentroid(selection) {
 	var element = selection.node(), bbox = element.getBBox();
 	var centroid = [bbox.x + bbox.width/2, bbox.y + bbox.height/2];

@@ -25,8 +25,8 @@ def fifteen_per_state(state):
             'Port St. Lucie', 'Pembroke Pines', 'Cape Coral', 'Hollywood', 'Gainesville', 'Miramar', 'Coral Springs'],
     'GA': ['Atlanta', 'Augusta', 'Columbus', 'Savannah', 'Athens', 'Sandy Springs', 'Macon', 'Roswell', 'Albany', 'Johns Creek',
             'Warner Robins', 'Alpharetta', 'Marietta', 'Valdosta', 'Smyrna'],
-    'HI': ['Honolulu', 'Pearl City', 'Hilo', 'Kailua', 'Waipahu', 'Kāne‘ohe', 'Mililani Town', 'Kahului', '‘Ewa Gentry',
-            'Kīhei'],
+    'HI': ['Honolulu', 'Pearl City', 'Hilo', 'Kailua', 'Waipahu', 'Kane ohe', 'Mililani Town', 'Kahului', 'Ewa Gentry',
+            'Kihei'],
     'ID': ['Boise', 'Nampa', 'Meridian', 'Idaho Falls', 'Pocatello', 'Caldwell', "Coeur d'Alene", 'Twin Falls', 'Lewiston',
             'Post Falls', 'Rexburg', 'Moscow', 'Eagle', 'Kuna', 'Mountain Home'],
     'IL': ['Chicago', 'Aurora', 'Rockford', 'Joliet', 'Naperville', 'Springfield', 'Peoria', 'North Peoria', 'Elgin', 'Waukegan'],
@@ -132,7 +132,7 @@ def city_numbers(query_name, cities, state):
     for each in cities:
         city = job_search(each)
 
-        url = 'http://api.indeed.com/ads/apisearch?publisher=3962451415712761&format=json&q=title:"' + query_name + '"&l=' + city + '+' + state + '&sort=&radius=&st=&jt=&start=&limit=&fromage=&filter=&latlong=1&co=us&chnl=&userip=&useragent=Mozilla/%2F4.0%28Firefox%29&v=2'
+        url = 'http://api.indeed.com/ads/apisearch?publisher=3962451415712761&format=json&q=title:"' + query_name + '"&l=' + city + '+' + state + '&sort=&radius=0&st=&jt=&start=&limit=&fromage=&filter=&latlong=1&co=us&chnl=&userip=&useragent=Mozilla/%2F4.0%28Firefox%29&v=2'
     
         ## Grab the indeed query based on the job title input by the user
         file = urllib2.urlopen(url)

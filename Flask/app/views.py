@@ -34,8 +34,15 @@ def top_cities():
         
     search_string = job_search(search_term)    
     number_jobs = city_numbers(search_string, cities, state) 
+    
+    sorted_city_indices = sorted(range(len(number_jobs)), key=lambda k: number_jobs[k])
+    job_list, city_list = [], []
+    for indices in sorted_city_indices:
+        job_list.append(number_jobs[indices])
+        city_list.append(cities[indices])
+    
     return render_template("top_cities.html", state = state, total = total, 
-    jobnum_list = number_jobs, query = search_term, search_string = search_string)
+    jobnum_list = job_list, list_of_cities = city_list, query = search_term, search_string = search_string)
     
 @app.route('/cost_of_living')
 def col():

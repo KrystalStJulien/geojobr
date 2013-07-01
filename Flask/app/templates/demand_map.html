@@ -159,12 +159,18 @@ $(document).ready(function(){
    		var width = 959, height = 593;
    		
    		var element = document.elementFromPoint(e.pageX, e.pageY);
+   		
+   		if (element.id === "MI1" | "MI2"){
+   			var elem_id = "MI";
+   		} else {
+   			var elem_id = element.id;
+   		}
    		   		
    		var centroid = getCentroid(d3.select(element));
    		
    		var trans = [-(centroid[0]-width/9), (height/3-centroid[1])];
       
-     if (values[element.id] > 0){ 	
+     if (values[elem_id] > 0){ 	
       	
       	d3.selectAll("path")
       	  .style("display", "none");
@@ -172,8 +178,8 @@ $(document).ready(function(){
       	d3.selectAll(".gradient")
       	  .style("display", "none");
  	  
-      	if (element.id === "MI1" | "MI2") {
-      		
+      	if (elem_id === "MI") {
+   
         d3.selectAll(".MI")
       	  .style("display", "block")
       	  .transition()
@@ -182,8 +188,8 @@ $(document).ready(function(){
       	  .attr("transform", "scale(1.5), translate(" + trans + ")") 
       	  .each("end", function() {
       	  	
-      	  $('#loading_image').show();
-    	  $('#wait_message').show();
+      	  //$('#loading_image').show();
+    	  //$('#wait_message').show();
       	  	
       	  	d3.selectAll("body")
       	  	  .append("form")
@@ -195,7 +201,7 @@ $(document).ready(function(){
       	  	  .attr("name", "state_name")
       	  	  .attr("id", "state_name")
       	  	  .attr("type", "search")
-      	  	  .attr("value", element.id)
+      	  	  .attr("value", elem_id)
       	  	  .style("display", "none")
       	  	  .transition()
       	  	  .each("end", function() {
@@ -225,7 +231,7 @@ $(document).ready(function(){
       	  	  .attr("name", "state_name")
       	  	  .attr("id", "state_name")
       	  	  .attr("type", "search")
-      	  	  .attr("value", element.id)
+      	  	  .attr("value", elem_id)
       	  	  .style("display", "none")
       	  	  .transition()
       	  	  .each("end", function() {

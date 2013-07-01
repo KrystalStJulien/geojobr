@@ -224,7 +224,7 @@ def norm_vals(query_name):
             
         #normalized = float(jobs) / float(populations[each]) * date_avg   
         job_numbers.append(jobs)    
-        norm_numbers.append(jobs/date_avg/float(populations[each]))
+        norm_numbers.append(float(jobs)/float(date_avg)/float(populations[each]))
         dates_list.append(date_avg)
     
     all_list = [job_numbers, dates_list]

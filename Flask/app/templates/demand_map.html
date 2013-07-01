@@ -96,9 +96,9 @@ $('path').click(function() {
     </linearGradient>
   </defs>
   
-<rect x="900" y="250" width="30" height="300" fill="url(#grad1)" />
-<text x="880" y="240" style="font-size: 10px;">most demand</text>
-<text x="875" y="565" style="font-size: 10px;">least demand</text>
+<rect class="gradient" x="900" y="250" width="30" height="300" fill="url(#grad1)" />
+<text class="gradient" x="880" y="240" style="font-size: 10px;">most demand</text>
+<text class="gradient" x="875" y="565" style="font-size: 10px;">least demand</text>
 
 </svg>
 
@@ -167,6 +167,9 @@ $(document).ready(function(){
      if (values[element.id] > 0){ 	
       	
       	d3.selectAll("path")
+      	  .style("display", "none");
+      	  
+      	d3.selectAll(".gradient")
       	  .style("display", "none");
  	  
       	if (element.id === "MI1" | "MI2") {
@@ -240,7 +243,7 @@ $(document).ready(function(){
 
 
 $(".state").tooltipsy({
-	offset: [10, 0],
+	//offset: [10, 0],
 	css: {
 		"background-color": "white",
 		"border": "1px solid #00008b"

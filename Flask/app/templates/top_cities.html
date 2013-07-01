@@ -6,13 +6,14 @@
 <p style="display: block">Click on city to begin applying for jobs</p>
 <script>
 function goBack() {
-  window.history.back()
+  window.history.reload(history.go(-1))
+  alert("why?")
 };
 </script>
 		<svg width="959" height="593" style="background-color: white; border: 1px solid black;">
 <text x="430" y="30" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="20" fill="#00008b">Total Jobs Found in US for '{{query}}': {{total}}</text>
 <!--<text x="420" y="170" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="15" fill="#00008b">All jobs are in city or within 25 miles of city</text>-->
-<text x="400" y="150" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="20" fill="#00008b" style="text-decoration: underline">  Top cities for '{{query}}' jobs in {{state}}  </text>
+<text x="400" y="150" font-family="Century Gothic, Helvetica, Arial, sans-serif;" font-size="20" fill="#00008b" style="text-decoration: underline; -moz-text-decoration: underline;">  Top cities for '{{query}}' jobs in {{state}}  </text>
 
 			<style type="text/css">
 				.state {
@@ -79,119 +80,22 @@ function goBack() {
 <path d="m 148.72184,175.53153 8.8497,-34.80151 1.05079,-4.22952 2.35437,-5.62323 -0.61551,-1.16288 -2.51486,-0.0462 -1.2816,-1.6707 0.45724,-1.46407 0.50341,-3.24688 4.45815,-5.48695 1.82898,-1.09915 1.14311,-1.14311 1.48604,-3.56563 4.04706,-5.6694 3.56563,-3.8624 0.22862,-3.451314 -3.26886,-2.468682 -1.78341,-4.642625 -12.66377,-3.61197 -15.08909,-3.54365 -15.43202,0.114306 -0.45724,-1.371729 -5.48695,2.057604 -4.45814,-0.571559 -2.40054,-1.600361 -1.25742,0.685875 -4.68676,-0.228632 -1.71467,-1.371729 -5.25832,-2.057604 -0.800182,0.114316 -4.34383,-1.486056 -1.943291,1.828983 -6.172812,-0.342927 -5.944183,-4.115209 0.685865,-0.80018 0.228621,-7.773173 -2.286225,-3.886577 -4.115208,-0.571559 -0.685865,-2.514847 -2.353932,-0.466565 -5.798525,2.058784 -2.263247,6.466418 -3.233209,10.022949 -3.23321,6.466419 -5.011474,14.064461 -6.466419,13.579473 -8.083023,12.60952 -1.939926,2.90989 -0.808302,8.568 0.386095,12.08023 112.578342,26.32133 z" id="OR" class="state" title="{{OR}}"/>
 <path d="m 102.07324,7.6117734 4.36483,1.4549443 9.69963,2.7482283 8.568,1.939925 20.0459,5.658117 22.95579,5.658116 15.22312,3.207173 -13.63236,63.585811 -12.445,-3.525318 -15.50801,-3.570679 -15.22929,0.03324 -0.45557,-1.344699 -5.59922,2.179293 -4.59543,-0.736744 -2.14697,-1.584054 -1.31321,0.657976 -4.73566,-0.140243 -1.69836,-1.349633 -5.26304,-2.112303 -0.734971,0.146918 -4.389122,-1.524448 -1.893298,1.817379 -6.265906,-0.298733 -5.925698,-4.125702 0.778957,-0.932763 0.121223,-7.677452 -2.281999,-3.839701 -4.115208,-0.60704 -0.67741,-2.510616 -2.275512,-0.456932 -3.554948,1.230576 -2.263247,-3.219247 0.323321,-2.909889 2.748228,-0.323321 1.616605,-4.041511 -2.586568,-1.131624 0.161661,-3.718191 4.364833,-0.646641 -2.748228,-2.748228 -1.454945,-7.113061 0.646642,-2.909888 0,-7.921363 -1.778265,-3.23321 2.263247,-9.376307 2.101586,0.484981 2.424907,2.909889 2.748228,2.586567 3.233209,1.939926 4.526493,2.101586 3.071551,0.646642 2.909889,1.454944 3.394873,0.969963 2.263246,-0.16166 0,-2.424908 1.293284,-1.131623 2.101582,-1.293284 0.32333,1.131624 0.32332,1.778265 -2.263251,0.484981 -0.323321,2.101586 1.778262,1.454945 1.13163,2.424907 0.64664,1.939925 1.45494,-0.16166 0.16166,-1.293284 -0.96996,-1.293284 -0.48498,-3.233209 0.8083,-1.778265 -0.64664,-1.454944 0,-2.263247 1.77827,-3.55653 -1.13163,-2.586568 -2.42491,-4.8498139 0.32333,-0.8083023 1.13162,-0.8083024 z m -9.456692,5.9789646 2.020764,-0.16166 0.484982,1.374119 1.535779,-1.616615 2.344082,0 0.808303,1.535779 -1.53578,1.69744 0.646652,0.808313 -0.727477,2.020761 -1.374119,0.404146 c 0,0 -0.889138,0.08084 -0.889138,-0.242485 0,-0.323321 1.454955,-2.586578 1.454955,-2.586578 l -1.69744,-0.565817 -0.323321,1.454954 -0.727478,0.646642 -1.535782,-2.263257 -0.484982,-2.505742 z" id="WA" class="state" title="{{WA}}"/>
 <path d="m 144.69443,382.19813 3.94008,-0.48862 1.48604,-2.01144 0.54454,-2.94109 -3.55152,-0.59012 -0.51417,-0.66822 0.4775,-2.03231 -0.15928,-0.58967 1.92257,-0.61959 3.04278,-2.83268 0.58156,-4.9951 1.3799,-3.40211 1.94329,-2.16626 3.51887,-1.58967 1.65439,-1.60483 0.0687,-2.10884 -0.99333,-0.58001 -1.02315,-1.07273 -1.15522,-5.84845 -2.6852,-4.83009 0.56581,-3.505 -2.41958,-1.02931 -69.061322,-104.1784 18.902112,-67.60149 -67.079863,-15.69796 -1.506896,4.73324 -0.161661,7.43638 -5.173135,11.80121 -3.071548,2.58657 -0.323321,1.13162 -1.778266,0.80831 -1.454944,4.20317 -0.808302,3.23321 2.748228,4.20317 1.616605,4.20317 1.131623,3.55653 -0.323321,6.46642 -1.778265,3.07155 -0.646642,5.81978 -0.969963,3.71819 1.778265,3.87985 2.748228,4.52649 2.263247,4.84982 1.293283,4.04151 -0.32332,3.23321 -0.323321,0.48498 0,2.10158 5.658116,6.30476 -0.484981,2.42491 -0.646642,2.26325 -0.646642,1.93992 0.16166,8.24469 2.101586,3.71819 1.939926,2.58656 2.748228,0.48499 0.969963,2.74822 -1.131623,3.55653 -2.101587,1.61661 -1.131623,0 -0.808302,3.87985 0.484981,2.90989 3.23321,4.36483 1.616604,5.3348 1.454944,4.68815 1.293284,3.07155 3.39487,5.81978 1.454944,2.58656 0.484982,2.90989 1.616604,0.96996 0,2.42491 -0.808302,1.93993 -1.778265,7.11306 -0.484982,1.93992 2.424908,2.74823 4.203172,0.48498 4.526493,1.77827 3.879851,2.10158 2.909889,0 2.909888,3.07155 2.586567,4.84982 1.131624,2.26324 3.879851,2.10159 4.849814,0.8083 1.454944,2.10159 0.646642,3.23321 -1.454944,0.64664 0.323321,0.96996 3.233211,0.8083 2.748228,0.16167 3.159889,-1.68685 3.879854,4.20317 0.808302,2.26325 2.586572,4.20317 0.32332,3.23321 0,9.37631 0.48498,1.77826 10.02295,1.45495 19.72257,2.74822 13.84504,1.3497 z m -88.135212,-43.71668 1.293288,1.53578 -0.16166,1.29329 -3.233221,-0.0808 -0.565814,-1.21246 -0.646644,-1.45495 3.314051,-0.0808 z m 1.939932,0 1.212458,-0.64664 3.556543,2.10159 3.07156,1.21245 -0.889136,0.64666 -4.526509,-0.2425 -1.61661,-1.61661 -0.808306,-1.45495 z m 20.692614,19.80348 1.778265,2.34408 0.808313,0.96997 1.535779,0.56581 0.565807,-1.45495 -0.969963,-1.77827 -2.667403,-2.02076 -1.050798,0.16166 0,1.21246 z m -1.454955,8.64886 1.778276,3.15239 1.212458,1.93994 -1.454954,0.24248 -1.293284,-1.21245 c 0,0 -0.727477,-1.45495 -0.727477,-1.85911 0,-0.40414 0,-2.18242 0,-2.18242 l 0.484981,-0.0808 z" id="CA" class="state" title="{{CA}}"/>
+
 </svg>	
 
-<input type="button" value="Go back to previous map" style="font-size: 20; cursor: hand; position: absolute; top: 560; left: 650; z-index: 2; color: #00008b;" onclick="goBack()">
-<input type="button" value="Search all jobs in {{state}}" style="font-size: 20; cursor: hand; position: absolute; top: 560; left: 840; z-index: 2; color: #00008b;" onclick="goToIndeedState()">
+<input class="button" type="button" value="Go back to previous map" style="font-size: 14px; position: relative; left: 0; top: -150; z-index: 2; color: #00008b;" onclick="goBack()">
+
+<input class="button" type="button" value="Search all jobs in {{state}}" style="font-size: 14px; position: relative; left: 250; top: -188; z-index: 3; color: #00008b;" onclick="goToIndeedState()">
+
+
+
+
 
 <!--
 <div id="droplist" style="position:absolute; top:300; left:800; color:red; font-size:20px; z-index:2;">	
 -->
 <script>
-/*
-var cities_15 = {
-'AL': ['Birmingham', 'Montgomery', 'Mobile', 'Huntsville', 'Tuscaloosa', 'Hoover', 'Dothan', 'Decatur',
-        'Auburn', 'Madison', 'Florence', 'Gadsden', 'Vestavia Hills', 'Prattville', 'Phenix City'],
-'AK': ['Anchorage', 'Fairbanks', 'Juneau', 'Sitka', 'Ketchikan', 'Wasilla', 'Kenai', 'Kodiak', 'Bethel',
-            'Palmer', 'Homer', 'Unalaska', 'Barrow', 'Soldotna', 'Valdez'],
-'AZ': ['Phoenix', 'Tucson', 'Mesa', 'Chandler', 'Glendale', 'Scottsdale', 'Gilbert', 'Tempe', 'Peoria',
-            'Surprise', 'Yuma', 'Avondale', 'Flagstaff', 'Goodyear', 'Lake Havasu City'], 
-'AR': ['Little Rock', 'Fort Smith', 'Fayetteville', 'Springdale', 'Jonesboro', 'North Little Rock', 'Conway',
-            'Rogers', 'Pine Bluff', 'Bentonville', 'Hot Springs', 'Benton', 'Texarkana', 'Sherwood', 'Jacksonville'],
-'CA': ['Los Angeles', 'San Diego', 'San Jose', 'San Francisco', 'Fresno', 'Sacramento', 'Long Beach', 'Oakland',
-            'Bakersfield', 'Anaheim', 'Santa Ana', 'Riverside', 'Stockton', 'Chula Vista', 'Fremont'],
-'CO': ['Denver', 'Colorado Springs', 'Aurora', 'Fort Collins', 'Lakewood', 'Thornton', 'Arvada', 'Westminster',
-            'Pueblo', 'Centennial', 'Boulder', 'Greeley', 'Longmont', 'Loveland', 'Grand Junction'],
-'CT': ['Bridgeport', 'New Haven', 'Hartford', 'Stamford', 'Waterbury', 'Norwalk', 'Danbury', 'New Britain',
-            'Bristol', 'Meriden', 'Milford', 'West Haven', 'Middletown', 'Norwich'],
-'DE': ['Wilmington', 'Dover', 'Newark', 'Middletown', 'Smyrna', 'Milford', 'Seaford', 'Georgetown', 'Elsmere',
-            'New Castle', 'Millsboro', 'Laurel', 'Harrington', 'Camden', 'Clayton'],
-'DC': ['Washington'],
-'FL': ['Jacksonville', 'Miami', 'Tampa', 'St. Petersburg', 'Orlando', 'Hialeah', 'Tallahassee', 'Fort Lauderdale',
-            'Port St. Lucie', 'Pembroke Pines', 'Cape Coral', 'Hollywood', 'Gainesville', 'Miramar', 'Coral Springs'],
-'GA': ['Atlanta', 'Augusta', 'Columbus', 'Savannah', 'Athens', 'Sandy Springs', 'Macon', 'Roswell', 'Albany', 'Johns Creek',
-            'Warner Robins', 'Alpharetta', 'Marietta', 'Valdosta', 'Smyrna'],
-'HI': ['Honolulu', 'Pearl City', 'Hilo', 'Kailua', 'Waipahu', 'Kaneohe', 'Mililani Town', 'Kahului', 'Ewa Gentry',
-            'Kihei'],
-'ID': ['Boise', 'Nampa', 'Meridian', 'Idaho Falls', 'Pocatello', 'Caldwell', "Coeur d'Alene", 'Twin Falls', 'Lewiston',
-            'Post Falls', 'Rexburg', 'Moscow', 'Eagle', 'Kuna', 'Mountain Home'],
-'IL': ['Chicago', 'Aurora', 'Rockford', 'Joliet', 'Naperville', 'Springfield', 'Peoria', 'North Peoria', 'Elgin', 'Waukegan'],
-'IN': ['Indianapolis', 'Fort Wayne', 'Evansville', 'South Bend', 'Carmel', 'Bloomington', 'Fishers', 'Hammond', 'Gary',
-            'Muncie', 'Lafayette', 'Terre Haute', 'Kokomo', 'Anderson', 'Noblesville'],
-'IA': ['Des Moines', 'Cedar Rapids', 'Davenport', 'Sioux City', 'Iowa City', 'Waterloo', 'Council Bluffs', 'Ames',
-            'West Des Moines', 'Dubuque', 'Ankeny', 'Urbandale', 'Cedar Falls', 'Marion', 'Bettendorf'],
-'KS': ['Wichita', 'Overland Park', 'Kansas City', 'Topeka', 'Olathe', 'Lawrence', 'Shawnee', 'Manhattan', 'Lenexa',
-            'Salina', 'Hutchinson', 'Leavenworth', 'Leawood', 'Dodge City', 'Garden City'],
-'KY': ['Louisville', 'Lexington', 'Bowling Green', 'Owensboro', 'Covington', 'Hopkinsville', 'Richmond', 'Florence',
-            'Georgetown', 'Elizabethtown', 'Nicholasville', 'Henderson', 'Jeffersontown', 'Frankfort', 'Paducah'],
-'LA': ['New Orleans', 'Baton Rouge', 'Shreveport', 'Metairie', 'Lafayette', 'Lake Charles', 'Kenner', 'Bossier City',
-            'Monroe', 'Alexandria', 'Houma', 'Marrero', 'New Iberia', 'Laplace', 'Slidell'], 
-'ME': ['Portland', 'Lewiston', 'Bangor', 'South Portland', 'Auburn', 'Biddeford', 'Sanford', 'Augusta', 'Saco',
-            'Westbrook', 'Waterville', 'Presque Isle', 'Brewer', 'Bath', 'Caribou'],
-'MD': ['Baltimore', 'Frederick', 'Rockville', 'Gaithersburg', 'Bowie', 'Hagerstown', 'Annapolis', 'College Park',
-            'Salisbury', 'Laurel', 'Greenbelt', 'Cumberland', 'Westminster', 'Hyattsville', 'Takoma Park'],
-'MA': ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford', 'Brockton', 'Quincy', 'Lynn',
-            'Fall River', 'Newton', 'Lawrence', 'Somerville', 'Framingham', 'Haverhill'],
-'MI': ['Detroit', 'Grand Rapids', 'Warren', 'Sterling Heights', 'Lansing', 'Ann Arbor', 'Flint', 'Dearborn',
-            'Livonia', 'Clinton', 'Canton', 'Westland', 'Troy', 'Farmington Hills', 'Macomb'],
-'MN': ['Minneapolis', 'Saint Paul', 'Rochester', 'Duluth', 'Bloomington', 'Brooklyn Park', 'Plymouth', 'St. Cloud',
-            'Eagan', 'Woodbury', 'Maple Grove', 'Eden Prairie', 'Coon Rapids', 'Burnsville', 'Blaine'],
-'MS': ['Jackson', 'West Gulfport', 'Gulfport', 'Southaven', 'Hattiesburg', 'Biloxi', 'Meridian', 'Tupelo',
-            'Greenville', 'Olive Branch'],
-'MO': ['Kansas City', 'St. Louis', 'Springfield', 'Independence', 'Columbia', "Lee's Summit", "O'Fallon", 'St. Joseph',
-            'St. Charles', 'St. Peters', 'Blue Springs', 'Florissant', 'Joplin', 'Chesterfield', 'Jefferson City'],
-'MT': ['Billings', 'Missoula', 'Great Falls', 'Bozeman', 'Butte', 'Helena', 'Kalispell', 'Havre', 'Anaconda',
-            'Miles City', 'Belgrade', 'Livingston', 'Laurel', 'Whitefish', 'Lewistown'],
-'NE': ['Omaha', 'Lincoln', 'Bellevue', 'Grand Island', 'Kearney', 'Fremont', 'Hastings', 'North Platte', 'Norfolk',
-            'Columbus', 'Papillion', 'La Vista', 'Scottsbluff', 'South Sioux City', 'Beatrice'],
-'NV': ['Las Vegas', 'Henderson', 'Reno', 'North Las Vegas', 'Sparks', 'Carson City', 'Fernley', 'Elko', 'Mesquite',
-            'Boulder City', 'Fallon', 'Winnemucca', 'West Wendover', 'Ely', 'Yerington'],
-'NH': ['Manchester', 'Nashua', 'Concord', 'Derry', 'Dover', 'Rochester', 'Salem', 'Merrimack', 'Hudson', 'Londonderry',
-            'Keene', 'Bedford', 'Portsmouth', 'Goffstown', 'Laconia'],
-'NJ': ['Newark', 'Jersey City', 'Paterson', 'Elizabeth', 'Edison', 'Woodbridge Township', 'Lakewood Township', 'Toms River',
-            'Hamilton', 'Trenton', 'Clifton', 'Camden', 'Brick Township', 'Cherry Hill', 'Passaic'],
-'NM': ['Albuquerque', 'Las Cruces', 'Rio Rancho', 'Santa Fe', 'Roswell', 'Farmington', 'South Valley', 'Clovis', 'Hobbs', 
-            'Alamogordo', 'Carlsbad', 'Gallup', 'Los Alamos', 'Deming', 'Los Lunas'],
-'NY': ['New York', 'Buffalo', 'Rochester', 'Yonkers', 'Syracuse', 'Albany', 'New Rochelle', 'Mount Vernon', 'Schenectady',
-            'Utica', 'White Plains', 'Troy', 'Niagara Falls', 'Binghamton', 'Rome'],
-'NC': ['Charlotte', 'Raleigh', 'Greensboro', 'Durham', 'Winston-Salem', 'Fayetteville', 'Cary', 'Wilmington',
-            'High Point', 'Greenville', 'Asheville', 'Concord', 'Gastonia', 'Jacksonville', 'Chapel Hill'],
-'ND': ['Fargo', 'Bismarck', 'Grand Forks', 'Minot', 'West Fargo', 'Dickinson', 'Mandan', 'Williston', 'Jamestown',
-            'Wahpeton', 'Devils Lake', 'Valley City', 'Grafton', 'Beulah', 'Rugby'],
-'OH': ['Columbus', 'Cleveland', 'Cincinnati', 'Toledo', 'Akron', 'Dayton', 'Parma', 'Canton', 'Youngstown', 'Lorain',
-            'Hamilton', 'Springfield', 'Kettering', 'Elyria', 'Lakewood'],
-'OK': ['Oklahoma City', 'Tulsa', 'Norman', 'Broken Arrow', 'Lawton', 'Edmond', 'Moore', 'Midwest City', 'Enid',
-            'Stillwater', 'Muskogee', 'Bartlesville', 'Owasso', 'Shawnee', 'Ponca City'],
-'OR': ['Portland', 'Eugene', 'Salem', 'Gresham', 'Hillsboro', 'Beaverton', 'Bend', 'Medford', 'Springfield', 'Corvallis',
-            'Albany', 'Tigard', 'Lake Oswego', 'Keizer', 'Grants Pass'],
-'PA': ['Philadelphia', 'Pittsburgh', 'Allentown', 'Erie', 'Reading', 'Scranton', 'Bethlehem', 'Lancaster', 'Harrisburg',
-            'Altoona', 'York', 'State College', 'Wilkes-Barre', 'Chester', 'Williamsport'],
-'RI': ['Providence', 'Warwick', 'Cranston', 'Pawtucket', 'East Providence', 'Woonsocket', 'North Providence', 'West Warwick',
-            'Newport', 'Bristol'],
-'SC': ['Columbia', 'Charleston', 'North Charleston', 'Mount Pleasant', 'Rock Hill', 'Greenville', 'Summerville', 'Sumter',
-            'Hilton Head Island', 'Florence'],
-'SD': ['Sioux Falls', 'Rapid City', 'Aberdeen', 'Brookings', 'Watertown', 'Mitchell', 'Yankton', 'Pierre', 'Huron',
-            'Vermillion', 'Spearfish', 'Brandon', 'Box Elder', 'Sturgis', 'Madison'],
-'TN': ['Memphis', 'Nashville', 'Knoxville', 'Chattanooga', 'Clarksville', 'Murfreesboro', 'Jackson', 'Johnson City',
-            'Franklin', 'Bartlett', 'Hendersonville', 'Kingsport', 'Collierville', 'Cleveland', 'Smyrna'],
-'TX': ['Houston', 'San Antonio', 'Dallas', 'Austin', 'Fort Worth', 'El Paso', 'Arlington', 'Corpus Christi', 'Plano',
-            'Laredo', 'Lubbock', 'Garland', 'Irving', 'Amarillo', 'Grand Prairie'],
-'UT': ['Salt Lake City', 'West Valley City', 'Provo', 'West Jordan', 'Orem', 'Sandy', 'Ogden', 'St. George', 'Layton',
-            'Taylorsville', 'South Jordan', 'Logan', 'Lehi', 'Murray', 'Bountiful'],
-'VT': ['Burlington', 'South Burlington', 'Rutland', 'Barre', 'Montpelier', 'Winooski', 'St. Albans', 'Newport',
-            'Vergennes'],
-'VA': ['Virginia Beach', 'Norfolk', 'Chesapeake', 'Richmond', 'Newport News', 'Alexandria', 'Hampton', 'Roanoke',
-            'Portsmouth', 'Suffolk', 'Lynchburg', 'Harrisonburg', 'Charlottesville', 'Danville', 'Manassas'],
-'WA': ['Seattle', 'Spokane', 'Tacoma', 'Vancouver', 'Bellevue', 'Kent', 'Everett', 'Renton', 'Yakima', 'Federal Way', 
-            'Spokane Valley', 'Bellingham', 'Kennewick', 'Auburn', 'Pasco'],
-'WV': ['Charleston', 'Huntington', 'Parkersburg', 'Morgantown', 'Wheeling', 'Weirton', 'Fairmont', 'Beckley', 'Martinsburg',
-            'Clarksburg', 'South Charleston', 'St. Albans', 'Vienna', 'Bluefield', 'Moundsville'],
-'WI': ['Milwaukee', 'Madison', 'Green Bay', 'Kenosha', 'Racine', 'Appleton', 'Waukesha', 'Oshkosh', 'Eau Claire',
-            'Janesville', 'West Allis', 'La Crosse', 'Sheboygan', 'Wauwatosa', 'Fond du Lac'],
-'WY': ['Cheyenne', 'Casper', 'Laramie', 'Gillette', 'Rock Springs', 'Sheridan', 'Green River', 'Evanston', 'Riverton',
-            'Jackson', 'Cody', 'Rawlins', 'Lander', 'Torrington', 'Powell']
-};
-*/
+
 
 var jobnumbers = [{{jobnum_list[-1]}}, {{jobnum_list[-2]}}, {{jobnum_list[-3]}}, {{jobnum_list[-4]}}, {{jobnum_list[-5]}}];
 
